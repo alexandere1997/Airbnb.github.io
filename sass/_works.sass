@@ -1,5 +1,8 @@
 .works
   margin-top: 100px
+  .container-fluid
+    padding-right: 1.5rem
+    padding-left: 1.5rem
   img
     height: 570px
   &__header
@@ -32,8 +35,11 @@
       margin-bottom: 40px
 @media (max-width: 575px)
   .works
+    .works__header
+      font-size: 30px
     .works__block
       .works__box
+        padding: 30px
         h3
           font-size: 24px
         p
