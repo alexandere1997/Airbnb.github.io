@@ -1,7 +1,5 @@
 .integration
   margin-top: 140px
-  &__head
-    font-size: 40px
   &__header
     font-size: 46px
     line-height: 40px
@@ -19,20 +17,27 @@
       align-items: center
       width: 48px
       height: 48px
-      border: 2px solid black
+      border: 1px solid #cacaca
       border-radius: 60px 
       small
         font-size: 18px
-        color: #000000
-        font-family: sans-serif
+        color: #212121
+        +roboto
     h5
       font-size: 18px
       font-weight: 800
-      color: rgb(72, 72, 72)
+      color: #212121
+      +boldRoboto
   &__box
     font-size: 16px
-    font-weight: 400
-    color: #484848
+    +Regular
+    color: #212121
+  .button
+    background-color: #5B0F80
+    color: #fff
+    transition: 0.4s
+    &:hover
+      background-color: #310645
 @media (max-width: 575px)
   .integration
     strong

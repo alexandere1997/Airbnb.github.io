@@ -7,22 +7,31 @@
         padding-right: 0.5rem
         padding-left: 0.5rem
       a
-        color: #ffffff
+        color: #212121
+        +Medium
         svg
           font-size: 34px
     h1
-      font-size: 4rem
+      font-size: 3.5rem
       font-weight: bold
       font-family: sans-serif
       color: #ffffff
+      +roboto
   .header__buttons
     display: flex
+    a
+      +boldRoboto
 .header__line
-  border-bottom: 1px solid #787878
+  border-bottom: 1px solid #f8f8f8
+@media (max-width: 991px)
+  .header .uikit-example h1
+    font-size: 2.5rem 
 @media (max-width: 767px) 
   .header__buttons
     justify-content: center
 @media (max-width: 575px)
   .header .uikit-example h1
     font-size: 2rem
+  .header .header__buttons
+    flex-direction: column
 
