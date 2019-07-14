@@ -307,7 +307,7 @@ body {
     font-size: 30px;
   }
   .works .works__block .works__box {
-    height: none;
+    height: 400px;
     padding: 30px;
   }
   .works .works__block .works__box h3 {
