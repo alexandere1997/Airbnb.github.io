@@ -347,6 +347,9 @@ body {
 }
 
 @media (max-width: 575px) {
+  .prices .prices__header {
+    font-size: 34px;
+  }
   .prices h1 {
     font-size: 20px;
   }
