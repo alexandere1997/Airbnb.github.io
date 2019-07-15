@@ -64,7 +64,7 @@ function checkParams() {
   var fio = $('.form-control').val();
   var email = $('.form_email1').val();
   var phone = $('.form_phone1').val();
-  if(fio.length != 0 && email.length != 0 && phone.length != 0) {
+  if(fio.length != 0 && email.length != 0 && phone.length != 0 && $('.contact__chek').prop('checked')) {
       $('.contact__btn').removeAttr('disabled');
   } else {
       $('.contact__btn').attr('disabled', 'disabled');
@@ -72,11 +72,16 @@ function checkParams() {
 }
 
 $(function(){
+  var fio = $('.form-control').val();
+  var email = $('.form_email1').val();
+  var phone = $('.form_phone1').val();
  $('.contact__chek').on('change', function(){
- if($('.contact__chek').prop('checked')){
- $('.contact__btn').attr('disabled', false);
+ if($('.contact__chek').prop('checked') == true && fio.length == 0 && email.length == 0 && phone.length == 0){
+// $('.contact__btn').attr('disabled', false);
+ $('.contact__btn').removeAttr('disabled');
  }else{
- $('.contact__btn').attr('disabled', true);
+ //$('.contact__btn').attr('disabled', true);
+ $('.contact__btn').attr('disabled', 'disabled');
  }
  });
 });
