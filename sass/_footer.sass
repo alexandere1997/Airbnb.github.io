@@ -1,0 +1,25 @@
+.footer
+  margin-top: 100px
+  &__link
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    margin-top: 60px
+    margin-bottom: 60px
+    a
+      text-decoration: none
+      color: #212121
+      +Medium
+      font-size: 13px
+  &__info
+    p
+      font-size: 11px
+      +LightRoboto
+      color: #212121
+@media (max-width: 767px)
+  .footer
+    &__link
+      flex-wrap: wrap
+      a
+        margin-bottom: 15px
