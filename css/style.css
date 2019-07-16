@@ -66,7 +66,7 @@ body {
 
 .header .uikit-example nav .container-fluid .button__btn {
   background-color: #5B0F80;
-  font-family: 'Roboto', sans-serif;
+  font-family: "RobotoMedium";
   font-weight: normal;
   font-size: 12px;
   color: #fff;
@@ -273,16 +273,30 @@ body {
   padding: 60px;
   background-color: #f8f8f8;
   width: 100%;
-  height: 500px;
+  height: 415px;
 }
 
 .works__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .works__box h3 {
-  font-size: 48px;
+  font-size: 40px;
   font-family: sans-serif;
   font-weight: 800;
   color: #484848;
@@ -304,13 +318,9 @@ body {
 
 .works__images img {
   width: 100%;
-  height: 500px;
 }
 
 @media (max-width: 575px) {
-  .works .works__images img {
-    height: 270px;
-  }
   .works .works__header {
     font-size: 30px;
   }
@@ -339,6 +349,7 @@ body {
 
 .prices__text {
   color: #212121;
+  font-family: "RobotoRegular";
 }
 
 .prices__button a {
@@ -383,16 +394,32 @@ body {
   padding: 60px;
   background-color: #f8f8f8;
   width: 100%;
-  height: 500px;
+  height: 415px;
 }
 
 .benefits__images img {
   width: 100%;
-  height: 500px;
+}
+
+.benefits__box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .benefits__box h3 {
-  font-size: 48px;
+  font-size: 40px;
   font-family: sans-serif;
   font-weight: 800;
   color: #484848;
@@ -461,7 +488,7 @@ body {
 }
 
 .contact__header {
-  margin-top: 60px;
+  margin-top: 200px;
   margin-bottom: 60px;
   font-size: 46px;
   color: #484848;
@@ -471,7 +498,7 @@ body {
 
 .contact__text {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "RobotoRegular";
   color: #212121;
   text-align: center;
   margin-top: 30px;
@@ -490,10 +517,23 @@ body {
 }
 
 .contact form .contact__buttons {
-  margin-left: -102px;
+  margin-left: 26px;
 }
 
 .contact form .contact__buttons .main-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -502,6 +542,10 @@ body {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   color: #212121;
+}
+
+.contact form .contact__buttons .main-checkbox .contact__info a:hover {
+  text-decoration: underline;
 }
 
 .contact form .contact__buttons input[type="checkbox"] {
@@ -575,6 +619,12 @@ body {
   background-color: #310645;
 }
 
+@media (max-width: 767px) {
+  .contact form .contact__buttons {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .contact__header {
     font-size: 34px;
@@ -646,7 +696,12 @@ body {
 
 .footer__info p {
   font-size: 11px;
-  color: #212121;
+  font-weight: 100;
+  color: #757575;
+}
+
+.footer__info p a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
