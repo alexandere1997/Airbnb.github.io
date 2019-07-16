@@ -17,7 +17,7 @@
     padding: 60px
     background-color:  #f8f8f8
     width: 100%
-    height: 415px
+    height: 500px
   &__box
     display: flex
     flex-direction: column
@@ -43,12 +43,38 @@
   margin-top: 20px
   img
     width: 100%
-    
+    height: 500px
+.imgblok1
+  background: url("../img/work1/img1.jpg") no-repeat 50% 50%
+  background-size: cover
+  width: 100%
+  height: 500px
+.imgblok2
+  background: url("../img/work2/img1.jpg") no-repeat 50% 50%
+  background-size: cover
+  width: 100%
+  height: 500px
+.imgblok3
+  background: url("../img/work3/img1.jpg") no-repeat 50% 50%
+  background-size: cover
+  width: 100%
+  height: 500px
+@media (max-width: 767px)
+  .works
+    .imgblok1
+      background-size: contain
+    .imgblok2
+      background-size: contain
+    .imgblok3
+      background-size: contain
 @media (max-width: 575px)
   .works
-    .works__images
-      img
-        
+    .imgblok1
+      height: 172px
+    .imgblok2
+      height: 172px
+    .imgblok3
+      height: 172px
     .works__header
       font-size: 30px
     .works__block
