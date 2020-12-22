@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-  $('nav').toggleClass('bg-white header__line fixed-top', $(this).scrollTop() > 1);
+  $('nav').toggleClass('bg-white header__line', $(this).scrollTop() > 1);
 });
 
 $(window).scroll(function(){
